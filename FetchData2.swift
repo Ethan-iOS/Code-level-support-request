@@ -13,7 +13,7 @@ func fetchData2() -> [Event] {
         }
         
         
-        let container = CKContainer(identifier: "CloudKitContainerID")
+        let container = CKContainer(identifier: "ContainerID")
         let database = container.privateCloudDatabase
         let zoneID = CKRecordZone.ID(zoneName: "com.apple.coredata.cloudkit.zone", ownerName: CKCurrentUserDefaultName)
         let query = CKQuery(recordType: "CD_Event", predicate: NSCompoundPredicate(andPredicateWithSubpredicates: [
